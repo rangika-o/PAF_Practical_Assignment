@@ -41,7 +41,7 @@ public class Pharmacy { // A common method to connect to the DB
 			con.close();
 			//output = "Inserted successfully";
 			String newPharmacys = readPharmacys();
-			output = "{\"status\":\"success\", \"data\": \"" + newPharmacys + "\"}";
+			output = "{\"status\":\"success\"}";
 		} catch (Exception e) {
 			//output = "Error while inserting.";
 			 output = "{\"status\":\"error\", \"data\": \"Error while inserting.\"}"; 
@@ -130,7 +130,7 @@ public class Pharmacy { // A common method to connect to the DB
 			con.close();
 
 			   String newPharmacys = readPharmacys();    
-			   output = "{\"status\":\"success\", \"data\": \"" + newPharmacys + "\"}";
+			   output = "{\"status\":\"success\"}";
 			//output = "Updated successfully";
 		} catch (Exception e) {
 			output = "{\"status\":\"error\", \"data\":\"Error while updating.\"}";     
@@ -158,7 +158,7 @@ public class Pharmacy { // A common method to connect to the DB
 			preparedStmt.execute();
 			con.close();
 			 String newPharmacys = readPharmacys();    
-			   output = "{\"status\":\"success\", \"data\": \"" +  newPharmacys + "\"}";   
+			   output = "{\"status\":\"success\"}";   
 			//output = "Deleted successfully";
 		} catch (Exception e) {
 			output = "{\"status\":\"error\", \"data\":\"Error while deleting.\"}";    
