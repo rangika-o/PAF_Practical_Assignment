@@ -15,7 +15,7 @@
  <div class="row"> <div class="col-6">  
  <h1>Pharmacy Management </h1> 
  
-<form id="formPharmacy" name="formPharmacy" method="post" action="pharmacy.jsp">  
+<form id="formPharmacy" name="formPharmacy" >  
  
  Medicine Type:   
  <input id="MedicineType" name="MedicineType" type="text"     class="form-control form-control-sm"> 
